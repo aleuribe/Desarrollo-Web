@@ -1,0 +1,11 @@
+@mixin imagenFondo($color1, $color2) {
+    background-image: linear-gradient($color1, $color2);
+    height:100vh;
+}
+
+@mixin transformar($propiedad) {
+    -webkit-transform: $propiedad ;
+    -ms-transform: $propiedad;
+    -o-transform: $propiedad;
+    transform:$propiedad;
+}

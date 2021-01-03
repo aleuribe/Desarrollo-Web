@@ -1,0 +1,14 @@
+/*Atributos del footer*/
+footer{
+    background-color: $colorPrimario;
+    height: 50px;
+    a img {
+        height:40px;
+        width:40px;
+
+        &:hover{ /*Agregandole animacion a los iconos de redes sociales del footer */
+            @include transformar(rotate(360deg));
+            transition: 5s linear all;
+        }
+    }
+}

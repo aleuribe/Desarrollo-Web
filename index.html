@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Asociando el styles.css personalizado por las dudas-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Asociando las fuentes de google que vamos a usar-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Incluyendo bootstrap a la pagina -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!--Definicion del titulo-->
+    <title>A Key Place, tu sitio de turismo</title>
+    <!--Configuracion del SEO-->
+    <meta name="description"
+        content="A Key Place es el lugar por excelencia para descubrir tu proximo destino turístico. Con nuestras recomendaciones de viaje curadas, tendrás la mejor experiencia.">
+    <meta name="keywords" content="viajes, turismo, aventura, descubrir, ahorrar">
+    <meta name="author" content="Alejandro Uribe">
+
+    <!--Definicion de parametros de Open Graph-->
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="A Key Place, tu punto de partida">
+    <meta property="og:description"
+        content="Una verdadera experiencia curada para viajes y turismo, garantizando que tengas el maximo disfrute en cada destino.">
+    <meta property="og:url" content="https://akeyplace.com.ar">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:image:width" content="100">
+    <meta property="og:image:height" content="100">
+
+    <!--Configuracion del Favicon-->
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+</head>
+
+<body>
+    <!-- Elementos opcionales de bootstrap, anadidos-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+
+    <!-- Empieza la pagina visible-->
+    <header>
+        <!--Aqui va la cabecera de la pagina con el menu y el logo-->
+        <nav class="navbar navbar-expand-lg navbar-dark menuPagina">
+            <div class="container-fluid">
+                <!--Este es el boton que oculta o hace aparecer el menu cuando la pagina es mas chica-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Elementos del menu-->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Presentacion">Presentacion</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <!-- Elementos del submenu-->
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Tours
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#Tours">Tour 1</a></li>
+                                <li><a class="dropdown-item" href="#Tours">Tour 2</a></li>
+                                <li><a class="dropdown-item" href="#Tours">Tour 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Tienda">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Este es el logo-->
+                <a class="navbar-brand logo" href="#"><img src="images/logo.png" alt="Logo AKeyPlace" width="80px"
+                        class="d-inline-block align-right"></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Aqui va el contenido de la pagina dividida en 5 secciones-->
+        <!--Seccion de Inicio de AKeyPlace-->
+        <section id="Inicio" class="seccionInicio container-fluid" style="height:100%">
+            <h1 class="titulos">Tu punto de referencia sobre viajes y turismo...</h1>
+
+            <!--Fila que abarca toda la seccion de inicio-->
+            <div class="row">
+                <!--Fila 1, columna 1: Aqui iria la tira de fotos con los comentarios en forma galeria-->
+                <div class="tiraDeImagenes col-lg-9">
+                    <!-- Inicia el carousel-->
+
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+                            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+                            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/buenosaires1.jpg" class="d-block image-fluid w-100"
+                                    alt="Foto aérea del Obelisco de Buenos Aires en un atardecer con algo de tráfico">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p class="titulosCarrusel"><strong>Nombre del tour:</strong> Buenos Aires, ciudad de
+                                        la furia </p>
+                                    <p class="titulosCarrusel"><strong> Tiempo Recomendado:</strong> 5 horas</p>
+                                    <p class="titulosCarrusel"><strong>Costo Estimado:</strong> 100 USD</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/buenosaires2.jpg" class="d-block w-100"
+                                    alt="Foto aérea de Puerto Madero en Buenos Aires de noche con iluminación artificial">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p class="titulosCarrusel"><strong>Nombre del tour:</strong> Puerto Madero, la zona
+                                        cosmopolitan </p>
+                                    <p class="titulosCarrusel"><strong> Tiempo Recomendado:</strong> 2 horas</p>
+                                    <p class="titulosCarrusel"><strong>Costo Estimado:</strong> 50 USD</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/buenosaires3.jpg" class="d-block w-100"
+                                    alt="Foto a nivel de calle de San Telmo en Buenos Aires que es una zona histórica">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p class="titulosCarrusel"><strong>Nombre del tour:</strong> San Telmo, volviendo al
+                                        pasado </p>
+                                    <p class="titulosCarrusel"><strong> Tiempo Recomendado:</strong> 3 horas</p>
+                                    <p class="titulosCarrusel"><strong>Costo Estimado:</strong> 70 USD</p>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div> <!-- Termina el div de Col1 Fila1-->
+
+                <!-- Arranca el div de columna 2 (parte lateral)-->
+                <div class="col-lg-3">
+                    <!-- Fila 1, columna 2: A la derecha del todo-->
+                    <div class="row">
+                        <div class="videoViajes col-lg-12">
+                            <!--Aqui iria el video-->
+                            <iframe src="https://www.youtube.com/embed/SaDjNMF7hzo" frameborder="0"
+                                style="width:100%;height:200px;margin-top:10px" class="img-fluid"></iframe>
+                            <p>Video del ultimo viaje</p>
+                        </div>
+
+                        <!--Fila 1, columna 2: A la derecha del todo porque se va a colocar debajo de la anterior-->
+                        <div class="cajaComentarios col-lg-12">
+                            <!--Aqui iria el box de comentarios-->
+                            <h3>Caja de comentarios de redes sociales</h3>
+                            <div class="comentariosImportados">
+                                <!-- Comentario 1-->
+                                <div class="card comentariosRedes" style="width: 100%;">
+                                    <img src="images/facebook.png" class="card-img-top logoRedSocial"
+                                        alt="Logotipo de Facebook">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Carol G: </strong>De verdad es algo que recomiendo
+                                            a todos hacer, la ciudad de la furia es el unico paseo que trajo sentido a
+                                            mi vida.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Comentario 2-->
+                                <div class="card comentariosRedes" style="width: 100%;">
+                                    <img src="images/twitter.png" class="card-img-top logoRedSocial"
+                                        alt="Logotipo de Twitter">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Maria: </strong>El mejor paseo que he podido hacer
+                                            en mi vida, es una experiencia religiosa que recomiendo a todos hacer.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Comentario 3-->
+                                <div class="card comentariosRedes" style="width: 100%;">
+                                    <img src="images/instagram.png" class="card-img-top logoRedSocial"
+                                        alt="Logotipo de instagram">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Juan: </strong> Las mejores fotos que tome en mi
+                                            vida fue en el tour organizado por A Key Place.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--Seccion de presentacion de AKeyPlace-->
+        <section id="Presentacion" class="seccionPresentacion container-fluid" style="height:100%">
+
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="titulos">¿De donde nace A Key Place?</h1>
+                    <p>A Key Place busca convertirse en tu lugar de confianza que puedas identificar los mejores
+                        lugares en
+                        los que invertir tus dias de vacaciones. Te daremos consejos, recomendaciones y algunos tips
+                        para
+                        que puedas sacarle provecho a tus viajes.
+                        Usanos como tu fuente confiable relacionada al turismo y aprovecha nuesta lista curada
+                        empresas que
+                        hemos probado y llevan nuestro sello de calidad.
+                        De exigentes para exigentes...</p>
+
+                    <h2>¿Quienes forman parte de A Key Place?</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <img src="images/fotoale.png" alt="Foto de Alejandro, uno de los miembros del equipo" class="fotoAle float-end img-thumbnail">
+                </div>
+                <div class="col-sm-9">
+
+                    <h3>Historia de Ale...</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint incidunt dolores laudantium!
+                        Harum
+                        quisquam eos, autem dolores voluptate
+                        fugiat aut inventore nobis adipisci rem cupiditate repellat eius, corporis sequi dicta.</p>
+                </div>
+                <div class="col-sm-3">
+                    <img src="images/fotokey.png" alt="Foto de Key, uno de los miembros del equipo" class="fotoKey float-end img-thumbnail">
+                </div>
+                <div class="col-sm-9">
+                    <h3>Historia de Key...</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque itaque, dicta sunt
+                        tenetur,
+                        dolorum aspernatur eos est a ab, atque
+                        quia ducimus laudantium id eius architecto consequatur earum! Ut, debitis!</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!--Seccion de tours de AKeyPlace-->
+        <section id="Tours" class="seccionTours container-fluid" style="height:100%">
+            <h1 class="titulos">Lista de tours recomendados por pais y ciudad</h1>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/santelmo.PNG" alt="Foto de frente de San Telmo en Buenos Aires">
+                    <p>Argentina Buenos Aires - San Telmo</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/puertomadero.PNG" alt="Foto de dia mostrando Puerto Madero y edificios al fondo">
+                    <p>Argentina Buenos Aires - Puerto Madero</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/bosquesdepalermo.PNG" alt="Foto de los Bosques de Palermo, mostrando en primer plano el observatorio">
+                    <p>Argentina Buenos Aires - Bosques de Palermo</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!--Seccion de tienda de AKeyPlace-->
+        <section id="Tienda" class="seccionTienda container-fluid" style="height:100%">
+            <h1 class="titulos">Compra los mejores paquetes de viaje, articulos interesantes y llevate un grato recuerdo
+                de tus
+                vacaciones...</h1>
+
+            <div class="container px-4">
+                <div class="row gx-5">
+                    <div class="col">
+                        <!--Paquetes-->
+                        <div class="p-3 border bg-light">
+                            <h4>Paquetes Turisticos</h4>
+                        </div>
+                        <div class="p-3 border">
+                            <p>Nombre de paquete: xxx</p>
+                            <p>Precio: xxx</p>
+                            <p>Empresa: xxx</p>
+                            <p>Valoracion: xxx</p>
+                            <img src="images/paquete.PNG" class="" alt="Imagen que representa un paquete de viaje">
+                        </div>
+
+                        <div class="p-3 border">
+                            <p>Nombre de paquete: xxx</p>
+                            <p>Precio: xxx</p>
+                            <p>Empresa: xxx</p>
+                            <p>Valoracion: xxx</p>
+                            <img src="images/paquete.PNG" class="" alt="Imagen que representa un paquete de viaje">
+                        </div>
+
+                        <div class="p-3 border">
+                            <p>Nombre de paquete: xxx</p>
+                            <p>Precio: xxx</p>
+                            <p>Empresa: xxx</p>
+                            <p>Valoracion: xxx</p>
+                            <img src="images/paquete.PNG" class="" alt="Imagen que representa un paquete de viaje">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!--Merchandising-->
+                        <div class="p-3 border bg-light">
+                            <h4>Merchandising</h4>
+                        </div>
+                        <div class="p-3 border">
+                            <p>Nombre de paquete: xxx</p>
+                            <p>Precio: xxx</p>
+                            <p>Empresa: xxx</p>
+                            <p>Valoracion: xxx</p>
+                            <img src="images/paquete.PNG" class="" alt="Imagen que representa una mercancia">
+                        </div>
+
+                        <div class="p-3 border">
+                            <p>Nombre de paquete: xxx</p>
+                            <p>Precio: xxx</p>
+                            <p>Empresa: xxx</p>
+                            <p>Valoracion: xxx</p>
+                            <img src="images/paquete.PNG" class="" alt="Imagen que representa una mercancia">
+                        </div>
+
+                        <div class="p-3 border">
+                            <p>Nombre de paquete: xxx</p>
+                            <p>Precio: xxx</p>
+                            <p>Empresa: xxx</p>
+                            <p>Valoracion: xxx</p>
+                            <img src="images/paquete.PNG" class="" alt="Imagen que representa una mercancia">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!--Seccion de contacto de AKeyPlace-->
+        <section id="Contacto" class="seccionContacto container-fluid" style="height:100%">
+            <h1 class="titulos">Nos puede contactar mas rapidamente por nuestras redes sociales:</h1>
+            <article class="redesSociales">
+                <!--Estas son las redes sociales-->
+                <ul>
+                    <li><a href="https://facebook.com/akeyplace"> <img src="images/facebook.png"
+                                alt="Logo facebook"></a></li>
+                    <li><a href="https://instagram.com/akeyplace"> <img src="images/instagram.png"
+                                alt="Logo instagram"></a></li>
+                    <li><a href="https://twitter.com/akeyplace"> <img src="images/twitter.png" alt="Logo twitter"></a>
+                    </li>
+                    <li><a href="https://tiktok.com/akeyplace"> <img src="images/tiktok.png" alt="Logo tiktok"></a></li>
+                    <li><a href="https://youtube.com/akeyplace"> <img src="images/youtube.png" alt="Logo youtube"></a>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="formularioContacto">
+                <!--Este es el formulario como tal-->
+                <h3>Si desea una atencion por correo, o una llamada telefonica, envie sus datos en el siguiente
+                    formulario:</h3>
+                <form action="">
+                    <ul>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col">
+                                    <li>Nombre: <input type="text" value="inserte nombre"></li>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <li>Correo: <input type="email" value="inserte correo"></li>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <li>Telefono: <input type="tel" value="inserte telefono"></li>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <li>Interes: <input type="text" value="inserte sus comentarios o dudas"></li>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <li><input type="submit" value="Enviar"></li>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </ul>
+                </form>
+            </article>
+
+
+        </section>
+    </main>
+
+    <footer>
+        <!--Este es el fin de pagina con los links a las redes sociales-->
+        <div>
+            <a href="https://facebook.com/akeyplace"> <img src="images/facebook.png" alt="Logo facebook"></a>
+            <a href="https://instagram.com/akeyplace"> <img src="images/instagram.png" alt="Logo instagram"></a>
+            <a href="https://twitter.com/akeyplace"> <img src="images/twitter.png" alt="Logo twitter"></a>
+            <a href="https://tiktok.com/akeyplace"> <img src="images/tiktok.png" alt="Logo tiktok"></a>
+            <a href="https://youtube.com/akeyplace"> <img src="images/youtube.png" alt="Logo youtube"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
