@@ -3,22 +3,10 @@
     @include imagenFondo($colorFondo1,$colorFondo2);
 }
 
-
 .seccionContacto article {
-    display:inline-block;
-    width:40%;
+    max-width: 500px;
 }
 
-.seccionContacto article a img{
-    height:70px;
-    width:70px;
-    margin-bottom: 10px;
-}
-
-.seccionContacto article ul li{
-    display:inline-block;
-}
-
-.formularioContacto h3 {
-    padding-top:20px;
+.formularioContacto {
+    padding-bottom: 20px;
 }

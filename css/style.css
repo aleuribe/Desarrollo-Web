@@ -54,6 +54,8 @@ footer a img:hover {
 .seccionPresentacion p {
   text-indent: 2em;
   padding-bottom: 20px;
+  text-align: justify;
+  white-space: pre-line;
 }
 
 .fotoAle, .fotoKey {
@@ -101,22 +103,11 @@ footer a img:hover {
 }
 
 .seccionContacto article {
-  display: inline-block;
-  width: 40%;
+  max-width: 500px;
 }
 
-.seccionContacto article a img {
-  height: 70px;
-  width: 70px;
-  margin-bottom: 10px;
-}
-
-.seccionContacto article ul li {
-  display: inline-block;
-}
-
-.formularioContacto h3 {
-  padding-top: 20px;
+.formularioContacto {
+  padding-bottom: 20px;
 }
 
 * {
